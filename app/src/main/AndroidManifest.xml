@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KitLogin"
+        tools:targetApi="31">
+        <activity
+            android:name=".CardBoxActivity"
+            android:exported="false"
+            android:label="@string/title_activity_card_box"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".CustomListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_custom_list"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_recycler_view"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".SimpleActivity"
+            android:exported="false"
+            android:label="@string/title_activity_simple"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".CalcActivity"
+            android:exported="false"
+            android:label="@string/title_activity_calc"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".IntentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_intent"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".ui.theme.IntentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_intent"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".ui.theme.RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.KitLogin" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.KitLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
